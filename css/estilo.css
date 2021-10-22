@@ -1,0 +1,537 @@
+﻿@charset "UTF-8";
+
+
+/* CSS DO CABEÇALHO, NAV, FOOTER GERAIS */
+
+/* Mudança da cor do html para cinza*/
+
+html {
+    background-color: #696965;
+
+
+}
+
+/* Códigos para deixar os elementos do nav parecendo botões, alterando a largura, cor de fundo e bordas da ul, dos li e a */ 
+
+ul li {
+    display: inline-flex;
+    padding: 0px 0px 0px 0px;
+
+}
+
+ul li a {
+
+
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+
+}
+
+ul li a {
+    color: black;
+    background-color: #ADD6FF;
+    border: solid;
+    width: 215px;
+    text-align: center;
+
+}
+
+nav {
+    margin-left: 0px;
+}
+
+/* Mudança da cor do header, deixando-O com a mesma cor da imagem da logo inserida*/
+
+header {
+    background-color: #8FBEED
+}
+
+/* Posicionamento geral dos elementos. Alguns foram definidos a partir do uso do class nas páginas, mas outros não possuem isso, então estão definidos aqui. Determinação também das fontes e tamanho das letras nos parágrafos e largura do body*/ 
+
+article,
+aside,
+    {
+    margin-top: 50px;
+
+}
+
+p {
+    font-family: Arial, Helvetica, serif;
+    font-size: 1.1em;
+    text-align: left;
+    padding: 8px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 10px;
+    text-align: left;
+    font-family: sans-serif;
+
+}
+
+body {
+    width: 960px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-right: auto
+}
+
+article {
+    width: 570px;
+    margin-top: 0;
+    float: right;
+}
+
+aside {
+    width: 330px;
+    margin-top: 0;
+    float: left
+}
+
+/* Em algumas páginas, o posicionamento do footer em relação ao margin-top não estava ficando adequado ao definir essa propriedade de forma geral, então, definiu-se esse posicionamento para cada uma dessas páginas nomeando-as com um class diferente*/
+
+footer {
+
+    clear: both;
+    background-color: #66B3FF;
+    margin-top: 100px;
+
+}
+
+.footeroutras {
+
+    clear: both;
+    background-color: #66B3FF;
+    margin-top: 600px;
+}
+
+.footerescolas {
+    clear: both;
+    background-color: #66B3FF;
+    margin-top: 650px;
+}
+
+.footersomos {
+    clear: both;
+    background-color: #66B3FF;
+    margin-top: 650px;
+}
+
+.footercontato {
+    clear: both;
+    background-color: #66B3FF;
+    margin-top: 545px;
+}
+
+/* Posicionamento da imagem centralizada no header*/
+
+img {
+    align-content: center;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px
+}
+
+.artescola {
+    margin-top: 5px;
+    font-size: 0.8em;
+    width: 400px;
+    text-align: left;
+    font-family: serif;
+    float: right;
+    height: 435px
+}
+
+
+/* Código para deixar os links do mapa alinhados em colunas, definição do seu tamanho e tipo de escrita*/
+
+.mapa {
+    display: inline-grid;
+    font-size: 1.0em;
+    text-transform: capitalize;
+    border: none;
+    background-color: #66B3FF;
+
+}
+
+/* Posicionamento dos ícones das redes sociais, deixando-os em linha e no canto do footer */
+
+.rede {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+
+}
+
+/* CORES DAS PAGINAS */
+
+/* Como as páginas das escolas são bastante semelhantes, definiu-se uma cor diferente para elas para se ter uma sensação de mudança. Para manter todo o site numa linha no mesmo tom, as outras páginas também possuem uma cor específica. Como os elementos do nav foram colocados para parecerem botões sem uma divisão clara com o restante do body, em cada página o nav possui o mesmo identificador e cor do body*/
+
+.cor1 {
+    background-color: #FFFCF7
+}
+
+.cor1 {
+    background-color: #FFFCF7
+}
+
+.cor2 {
+    background-color: #FFF5E6
+}
+
+.cor3 {
+    background-color: #FFF0D9
+}
+
+.cor4 {
+    background-color: #FFEBCC
+}
+
+.cor5 {
+    background-color: #FFFAF2
+}
+
+.cor6 {
+    background-color: #FFE7BF
+}
+
+.cor7 {
+    background-color: #FFE3B3
+}
+
+.corp {
+    background-color: #ffffff
+}
+
+/* PÁGINA "ESCOLAS" */
+
+/* Aqui foram usados alguns identificadores do tipo "id" para os textos da página. O article da página possui duas sections que estão posicionadas em alturas diferentes, o que foi feito com o uso do padding*/
+
+
+#escol {
+    padding-top: 15px
+}
+
+#escnac {
+    padding-top: 150px
+}
+
+/* Posicionamento do article dessa página*/
+
+#escolas {
+    margin-right: 30px;
+    margin-top: 80px;
+    font-size: 0.8em;
+    width: 400px;
+    text-align: left;
+    font-family: serif;
+    float: right;
+    height: 500px;
+
+}
+
+/*Formatação e posicionamento  dos títulos que estão acima das imagens da página. Foi usado um h2 para fazê-los, deixando-os alinhados com o texto da respectiva era*/
+
+.tituescola {
+
+    width: 180px;
+    text-align: center;
+    background-color: #999900;
+    border-color: #000000;
+    border-style: solid;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-left: 55px;
+    margin-top: 80px;
+
+}
+
+/* Posicionamento das imagens abaixo dos títulos*/
+
+.imgescola {
+    margin-left: 70px
+}
+
+
+/* PÁGINA "CONTATO"*/
+
+/* Os campos dos formulários foram colocados dentro de um article, sendo que, por causa dos seus diferentes labels, foi necessário posicioná-los individulamente para deixá-los mais alinhados*/
+
+#form {
+
+    margin-top: 80px;
+    float: left;
+    padding-left: 40px
+}
+
+#botao {
+    float: right;
+    margin-top: -105px;
+    margin-right: 105px
+}
+
+#nome {
+    margin-left: 10px
+}
+
+#email {
+    margin-left: 12px
+}
+
+#msg {
+    margin-left: 62px;
+    width: 250px;
+    height: 100px;
+    resize: none
+}
+
+/* Posicionamento do texto no canto da página abaixo do nav*/
+
+#contato {
+
+    float: right;
+    margin-top: 80px;
+    margin-right: 20px;
+    font-size: 0.8em;
+    font-family: serif
+}
+
+/*PÁGINA "HOME"*/
+
+#home {
+    float: left;
+    margin-top: 80px;
+    padding-left: 40px;
+}
+
+#imghome {
+    float: right;
+    margin-right: -100px;
+    margin-top: 200px;
+    padding-left: 70
+}
+
+/* PÁGINAS DAS ESCOLAS */
+
+/* página quinhetismo, barroca e arcadismo */
+
+.titulo {
+    text-align: center;
+    font-size: 2.0em;
+    font-family: sans-serif;
+    margin-top: 50px
+}
+
+.artescola {
+
+    margin-top: 80px;
+    font-size: 0.8em;
+    width: 400px;
+    text-align: left;
+    font-family: serif;
+    float: right;
+    margin-right: 20px
+}
+
+.tabescola {
+    margin-top: 110px;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid;
+    height: 73px;
+    width: 500px;
+    margin-left: 40px
+}
+
+/* Posicionamento das setas que fazem o link para as outras páginas. Para a seta da página "quinhentismo" foi preciso fazer um posicionamento individual */
+
+.proximo {
+
+    float: right;
+    margin-right: 410px;
+    margin-top: 20px
+}
+
+.anterior {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px
+}
+
+.proximoqui {
+    float: left;
+    margin-left: 495px;
+    margin-top: 20px
+}
+
+
+/* página romantismo, realismo, parnasianismo, simbolismo, pré-modernismo, modernismo. A tabela de cada escola possui uma altura diferente, por isso cada uma foi identifica com um class diferente */
+
+.artescolatroc {
+
+    margin-top: 80px;
+    font-size: 0.8em;
+    width: 400px;
+    text-align: left;
+    font-family: serif;
+    float: left;
+    padding-left: 30px
+}
+
+
+.tabescolatrocroman {
+    margin-top: 110px;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    height: 38px
+}
+
+.tabescolatrocrel {
+    margin-top: 110px;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    height: 71px
+}
+
+.tabescolatrocpar {
+    margin-top: 110px;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    height: 148px
+}
+
+.tabescolatroc {
+    margin-top: 110px;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    height: 39px
+}
+
+.tabescolatrocpre {
+    margin-top: 110px;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    height: 76px
+}
+
+.tabescolatrocmod {
+    margin-top: 110px;
+    font-size: 1.0em;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    height: 24px
+}
+
+/* A posição das setas nessas escolas da era nacional está do lado oposto das que estão nas páginas da era colonial. Dessa forma, elas possuem um identificador diferente para serem posicionadas*/
+
+.proximonac {
+
+    float: right;
+    margin-right: -260px;
+    margin-top: 20px;
+    
+}
+
+/*
+.anteriornac {
+    float: left;
+    margin-right: -480px;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: black
+}
+*/
+
+.setas {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 430px ;
+    margin-top: 20px
+}
+
+/* PÁGINA "QUEM SOMOS" */
+
+.descri {
+    width: 560px;
+    float: left;
+    margin-top: 80px;
+    margin-left: 50px
+}
+
+.foto {
+    margin-left: 150px;
+    width: 100px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 80px
+}
+
+/* PÁGINA "PARÓDIA"*/
+
+/* O poema original e a parodia foram posicionados lado a lado*/
+
+.original {
+    float: left;
+    width: 200px;
+    margin-left: 50px
+}
+
+.parodia {
+    float: right;
+    width: 200px;
+    margin-left: 50px
+}
+
+/* Os poemas estão dentro de um article. Posicionamento geral desse article*/
+
+.paro {
+    float: left;
+    margin-left: 50px
+}
+
+/* O texto de introdução foi colocado numa section, posicionado a seguir */
+.inter {
+    width: 600px;
+    margin-left: 75px;
+
+}
+
+.textoparo {
+    padding-left: 25px
+}
+
+/* Posicionamento do aside que contém uma imagem e um texto abaixo*/
+
+.imgparo {
+    width: 160px;
+    margin-left: 100px;
+    margin-top: -160px;
+    font-size: 0.9em
+}
+
